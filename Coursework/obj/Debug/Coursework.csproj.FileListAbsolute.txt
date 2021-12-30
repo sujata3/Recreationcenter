@@ -1,0 +1,26 @@
+C:\Users\user\source\repos\Coursework\bin\Debug\Coursework.exe.config
+C:\Users\user\source\repos\Coursework\bin\Debug\Coursework.exe
+C:\Users\user\source\repos\Coursework\bin\Debug\Coursework.pdb
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.Form1.resources
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.Properties.Resources.resources
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.exe
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.pdb
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.CustomerCheckout.resources
+C:\Users\user\source\repos\Coursework\obj\Debug\Coursework.Rate.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.csprojAssemblyReference.cache
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.CustomerCheckout.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.mainPage.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.Properties.Resources.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.Rate.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.csproj.GenerateResource.cache
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.csproj.CoreCompileInputs.cache
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.exe
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.pdb
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\bin\Debug\Coursework.exe.config
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\bin\Debug\Coursework.exe
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\bin\Debug\Coursework.pdb
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.WeeklyReport.resources
+C:\Users\Toshiba\Desktop\College Final Year\Application Development\Recreationcenter-master\Coursework\obj\Debug\Coursework.DayReport.resources
