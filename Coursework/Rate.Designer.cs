@@ -57,9 +57,21 @@ namespace Coursework
             this.adultTwoHr_tb = new System.Windows.Forms.TextBox();
             this.adultOneHr_tb = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Save = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.group20rate_tb = new System.Windows.Forms.TextBox();
+            this.group15rate_tb = new System.Windows.Forms.TextBox();
+            this.group10rate_tb = new System.Windows.Forms.TextBox();
+            this.group5rate_tb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.group25rate_tb = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // childRate_lbl
@@ -291,17 +303,9 @@ namespace Coursework
             this.label12.Size = new System.Drawing.Size(0, 13);
             this.label12.TabIndex = 19;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(421, 114);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(367, 209);
-            this.dataGridView1.TabIndex = 28;
-            // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(200, 362);
+            this.Save.Location = new System.Drawing.Point(369, 370);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 29;
@@ -309,13 +313,149 @@ namespace Coursework
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
+            // group20rate_tb
+            // 
+            this.group20rate_tb.Location = new System.Drawing.Point(542, 194);
+            this.group20rate_tb.Name = "group20rate_tb";
+            this.group20rate_tb.Size = new System.Drawing.Size(56, 20);
+            this.group20rate_tb.TabIndex = 38;
+            // 
+            // group15rate_tb
+            // 
+            this.group15rate_tb.Location = new System.Drawing.Point(542, 168);
+            this.group15rate_tb.Name = "group15rate_tb";
+            this.group15rate_tb.Size = new System.Drawing.Size(56, 20);
+            this.group15rate_tb.TabIndex = 37;
+            // 
+            // group10rate_tb
+            // 
+            this.group10rate_tb.Location = new System.Drawing.Point(542, 141);
+            this.group10rate_tb.Name = "group10rate_tb";
+            this.group10rate_tb.Size = new System.Drawing.Size(56, 20);
+            this.group10rate_tb.TabIndex = 36;
+            // 
+            // group5rate_tb
+            // 
+            this.group5rate_tb.Location = new System.Drawing.Point(542, 112);
+            this.group5rate_tb.Name = "group5rate_tb";
+            this.group5rate_tb.Size = new System.Drawing.Size(56, 20);
+            this.group5rate_tb.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(542, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 34;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(425, 198);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Group of 20";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(424, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Group of 15";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(424, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 16);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Group of 10";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(424, 117);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 16);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Group of 5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(427, 73);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Groups";
+            // 
+            // group25rate_tb
+            // 
+            this.group25rate_tb.Location = new System.Drawing.Point(542, 226);
+            this.group25rate_tb.Name = "group25rate_tb";
+            this.group25rate_tb.Size = new System.Drawing.Size(56, 20);
+            this.group25rate_tb.TabIndex = 41;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(425, 230);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 16);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Group of 25";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(529, 73);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(97, 16);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "Rates Per hour";
+            // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(29, 389);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.TabIndex = 43;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // Rate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backbtn);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.group25rate_tb);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.group20rate_tb);
+            this.Controls.Add(this.group15rate_tb);
+            this.Controls.Add(this.group10rate_tb);
+            this.Controls.Add(this.group5rate_tb);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Save);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.adultEightHr_tb);
             this.Controls.Add(this.adultSevenHr_tb);
             this.Controls.Add(this.adultSixHr_tb);
@@ -347,7 +487,6 @@ namespace Coursework
             this.Name = "Rate";
             this.Text = "Rate";
             this.Load += new System.EventHandler(this.Rate_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,7 +522,20 @@ namespace Coursework
         private System.Windows.Forms.TextBox adultTwoHr_tb;
         private System.Windows.Forms.TextBox adultOneHr_tb;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.TextBox group20rate_tb;
+        private System.Windows.Forms.TextBox group15rate_tb;
+        private System.Windows.Forms.TextBox group10rate_tb;
+        private System.Windows.Forms.TextBox group5rate_tb;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox group25rate_tb;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button backbtn;
     }
 }

@@ -51,10 +51,17 @@ namespace Coursework
             }
             else
             {
-                if (username.Equals(adminusername) && password.Equals(adminpassword) && role.Equals("Admin") || username.Equals(staffusername) && password.Equals(staffpassword) && role.Equals("Staff"))
+                if (username.Equals(adminusername) && password.Equals(adminpassword) && role.Equals("Admin"))
                 {
 
                     homepanel.BringToFront();
+                    
+                }
+                else if (username.Equals(staffusername) && password.Equals(staffpassword) && role.Equals("Staff")) 
+                {
+                    CustomerCheckout customer = new CustomerCheckout();
+                    customer.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -74,31 +81,56 @@ namespace Coursework
         {
             loginpanel.BringToFront();
 
+            //if (rolecombo.SelectedItem != null && role.Equals("Admin"))
+            //{
+            //    customercheckoutlbl.Hide();
+            //}
+            //else if (rolecombo.SelectedItem != null && role.Equals("Staff"))
+            //{
+            //    reportlbl.Hide();
+            //    ticketpricing.Hide();
+            //}
         }
 
         private void customercheckoutlbl_Click(object sender, EventArgs e)
         {
             CustomerCheckout customerCheckout = new CustomerCheckout();
             customerCheckout.Show();
-            
+            this.Hide();
+
         }
 
         private void ticketpricing_Click(object sender, EventArgs e)
         {
+            
             Rate rate = new Rate();
             rate.Show();
+            this.Hide();
         }
 
         private void reportlbl_Click(object sender, EventArgs e)
         {
+            
             WeeklyReport weekly = new WeeklyReport();
             weekly.Show();
+            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
+          
             DayReport dayReport = new DayReport();
             dayReport.Show();
+            this.Hide();
+        }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            
+            loginpanel.BringToFront();
+            username_tb.Clear();
+            password_tb.Clear();
+            username_tb.Focus();
         }
     }   
 }

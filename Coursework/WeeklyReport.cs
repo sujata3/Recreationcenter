@@ -100,5 +100,13 @@ namespace Coursework
             }
 
         }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            mainPage main = new mainPage();
+            this.Hide();
+            main.Show();
+            main.homepanel.BringToFront();
+        }
     }
 }

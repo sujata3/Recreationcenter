@@ -234,5 +234,13 @@ namespace Coursework
             child_tb.Text = "0";
             adult_tb.Text = "0";
         }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            mainPage main = new mainPage();
+            this.Hide();
+            main.Show();
+            main.loginpanel.BringToFront();
+        }
     }
 }

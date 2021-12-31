@@ -31,6 +31,7 @@ namespace Coursework
         {
             this.dailyReport = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dailyReport)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +52,22 @@ namespace Coursework
             this.label1.TabIndex = 1;
             this.label1.Text = "Daily Report";
             // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(47, 460);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.TabIndex = 2;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // DayReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 450);
+            this.ClientSize = new System.Drawing.Size(670, 493);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dailyReport);
             this.Name = "DayReport";
@@ -71,5 +83,6 @@ namespace Coursework
 
         private System.Windows.Forms.DataGridView dailyReport;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button backbtn;
     }
 }

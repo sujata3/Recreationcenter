@@ -40,12 +40,12 @@ namespace Coursework
             this.label2 = new System.Windows.Forms.Label();
             this.homepanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logoutbtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.reportlbl = new System.Windows.Forms.Label();
             this.ticketpricing = new System.Windows.Forms.Label();
-            this.customercheckoutlbl = new System.Windows.Forms.Label();
             this.homepagelbl = new System.Windows.Forms.Label();
             this.loginpanel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.homepanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@ namespace Coursework
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(268, 88);
+            this.groupBox1.Location = new System.Drawing.Point(270, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(288, 248);
             this.groupBox1.TabIndex = 1;
@@ -158,21 +158,42 @@ namespace Coursework
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.logoutbtn);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.reportlbl);
             this.panel1.Controls.Add(this.ticketpricing);
-            this.panel1.Controls.Add(this.customercheckoutlbl);
             this.panel1.Controls.Add(this.homepagelbl);
             this.panel1.Location = new System.Drawing.Point(4, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(791, 76);
             this.panel1.TabIndex = 0;
             // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Location = new System.Drawing.Point(715, 44);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(75, 23);
+            this.logoutbtn.TabIndex = 5;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = true;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(603, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Daily Report";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // reportlbl
             // 
             this.reportlbl.AutoSize = true;
             this.reportlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reportlbl.Location = new System.Drawing.Point(473, 31);
+            this.reportlbl.Location = new System.Drawing.Point(479, 44);
             this.reportlbl.Name = "reportlbl";
             this.reportlbl.Size = new System.Drawing.Size(109, 20);
             this.reportlbl.TabIndex = 3;
@@ -183,33 +204,22 @@ namespace Coursework
             // 
             this.ticketpricing.AutoSize = true;
             this.ticketpricing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketpricing.Location = new System.Drawing.Point(359, 31);
+            this.ticketpricing.Location = new System.Drawing.Point(365, 44);
             this.ticketpricing.Name = "ticketpricing";
             this.ticketpricing.Size = new System.Drawing.Size(102, 20);
             this.ticketpricing.TabIndex = 2;
             this.ticketpricing.Text = "Ticket Pricing";
             this.ticketpricing.Click += new System.EventHandler(this.ticketpricing_Click);
             // 
-            // customercheckoutlbl
-            // 
-            this.customercheckoutlbl.AutoSize = true;
-            this.customercheckoutlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customercheckoutlbl.Location = new System.Drawing.Point(198, 30);
-            this.customercheckoutlbl.Name = "customercheckoutlbl";
-            this.customercheckoutlbl.Size = new System.Drawing.Size(150, 20);
-            this.customercheckoutlbl.TabIndex = 1;
-            this.customercheckoutlbl.Text = "Customer Checkout";
-            this.customercheckoutlbl.Click += new System.EventHandler(this.customercheckoutlbl_Click);
-            // 
             // homepagelbl
             // 
             this.homepagelbl.AutoSize = true;
-            this.homepagelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homepagelbl.Location = new System.Drawing.Point(8, 20);
+            this.homepagelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homepagelbl.Location = new System.Drawing.Point(3, 3);
             this.homepagelbl.Name = "homepagelbl";
-            this.homepagelbl.Size = new System.Drawing.Size(156, 31);
+            this.homepagelbl.Size = new System.Drawing.Size(248, 33);
             this.homepagelbl.TabIndex = 0;
-            this.homepagelbl.Text = "Home Page";
+            this.homepagelbl.Text = "Admin Dashboard";
             // 
             // loginpanel
             // 
@@ -219,17 +229,6 @@ namespace Coursework
             this.loginpanel.Name = "loginpanel";
             this.loginpanel.Size = new System.Drawing.Size(795, 445);
             this.loginpanel.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(597, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Daily Report";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // mainPage
             // 
@@ -264,13 +263,13 @@ namespace Coursework
         private System.Windows.Forms.Button logIn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox rolecombo;
-        private System.Windows.Forms.Panel homepanel;
-        private System.Windows.Forms.Panel loginpanel;
+        public System.Windows.Forms.Panel homepanel;
+        public System.Windows.Forms.Panel loginpanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label reportlbl;
         private System.Windows.Forms.Label ticketpricing;
-        private System.Windows.Forms.Label customercheckoutlbl;
         private System.Windows.Forms.Label homepagelbl;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button logoutbtn;
     }
 }

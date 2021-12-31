@@ -39,13 +39,14 @@ namespace Coursework
             this.contact = new System.Windows.Forms.Label();
             this.contact_tb = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkout_btn = new System.Windows.Forms.Button();
-            this.save_btn = new System.Windows.Forms.Button();
-            this.groupnumber_cb = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.adult_tb = new System.Windows.Forms.TextBox();
             this.adult = new System.Windows.Forms.Label();
             this.child_tb = new System.Windows.Forms.TextBox();
             this.child = new System.Windows.Forms.Label();
+            this.checkout_btn = new System.Windows.Forms.Button();
+            this.save_btn = new System.Windows.Forms.Button();
+            this.groupnumber_cb = new System.Windows.Forms.ComboBox();
             this.total_tb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.hour_tb = new System.Windows.Forms.TextBox();
@@ -59,10 +60,10 @@ namespace Coursework
             this.type = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -160,39 +161,16 @@ namespace Coursework
             this.panel1.Size = new System.Drawing.Size(801, 256);
             this.panel1.TabIndex = 8;
             // 
-            // checkout_btn
+            // panel2
             // 
-            this.checkout_btn.Location = new System.Drawing.Point(522, 181);
-            this.checkout_btn.Name = "checkout_btn";
-            this.checkout_btn.Size = new System.Drawing.Size(75, 23);
-            this.checkout_btn.TabIndex = 25;
-            this.checkout_btn.Text = "Checkout";
-            this.checkout_btn.UseVisualStyleBackColor = true;
-            this.checkout_btn.Click += new System.EventHandler(this.checkout_btn_Click);
-            // 
-            // save_btn
-            // 
-            this.save_btn.Location = new System.Drawing.Point(379, 183);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(75, 23);
-            this.save_btn.TabIndex = 24;
-            this.save_btn.Text = "Save";
-            this.save_btn.UseVisualStyleBackColor = true;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
-            // 
-            // groupnumber_cb
-            // 
-            this.groupnumber_cb.FormattingEnabled = true;
-            this.groupnumber_cb.Items.AddRange(new object[] {
-            "5",
-            "10",
-            "15",
-            "20",
-            "25"});
-            this.groupnumber_cb.Location = new System.Drawing.Point(292, 38);
-            this.groupnumber_cb.Name = "groupnumber_cb";
-            this.groupnumber_cb.Size = new System.Drawing.Size(48, 21);
-            this.groupnumber_cb.TabIndex = 23;
+            this.panel2.Controls.Add(this.adult_tb);
+            this.panel2.Controls.Add(this.adult);
+            this.panel2.Controls.Add(this.child_tb);
+            this.panel2.Controls.Add(this.child);
+            this.panel2.Location = new System.Drawing.Point(361, 60);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(253, 97);
+            this.panel2.TabIndex = 26;
             // 
             // adult_tb
             // 
@@ -231,6 +209,40 @@ namespace Coursework
             this.child.Size = new System.Drawing.Size(122, 20);
             this.child.TabIndex = 19;
             this.child.Text = "Number of Child";
+            // 
+            // checkout_btn
+            // 
+            this.checkout_btn.Location = new System.Drawing.Point(522, 181);
+            this.checkout_btn.Name = "checkout_btn";
+            this.checkout_btn.Size = new System.Drawing.Size(75, 23);
+            this.checkout_btn.TabIndex = 25;
+            this.checkout_btn.Text = "Checkout";
+            this.checkout_btn.UseVisualStyleBackColor = true;
+            this.checkout_btn.Click += new System.EventHandler(this.checkout_btn_Click);
+            // 
+            // save_btn
+            // 
+            this.save_btn.Location = new System.Drawing.Point(379, 183);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(75, 23);
+            this.save_btn.TabIndex = 24;
+            this.save_btn.Text = "Save";
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
+            // groupnumber_cb
+            // 
+            this.groupnumber_cb.FormattingEnabled = true;
+            this.groupnumber_cb.Items.AddRange(new object[] {
+            "5",
+            "10",
+            "15",
+            "20",
+            "25"});
+            this.groupnumber_cb.Location = new System.Drawing.Point(292, 38);
+            this.groupnumber_cb.Name = "groupnumber_cb";
+            this.groupnumber_cb.Size = new System.Drawing.Size(48, 21);
+            this.groupnumber_cb.TabIndex = 23;
             // 
             // total_tb
             // 
@@ -352,23 +364,23 @@ namespace Coursework
             this.dataGridView1.Size = new System.Drawing.Size(775, 206);
             this.dataGridView1.TabIndex = 9;
             // 
-            // panel2
+            // backbtn
             // 
-            this.panel2.Controls.Add(this.adult_tb);
-            this.panel2.Controls.Add(this.adult);
-            this.panel2.Controls.Add(this.child_tb);
-            this.panel2.Controls.Add(this.child);
-            this.panel2.Location = new System.Drawing.Point(361, 60);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(253, 97);
-            this.panel2.TabIndex = 26;
+            this.backbtn.Location = new System.Drawing.Point(29, 631);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.TabIndex = 27;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // CustomerCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 622);
+            this.ClientSize = new System.Drawing.Size(800, 666);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.contact_tb);
@@ -384,9 +396,9 @@ namespace Coursework
             this.Load += new System.EventHandler(this.CustomerCheckout_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +436,6 @@ namespace Coursework
         private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button backbtn;
     }
 }

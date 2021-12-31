@@ -35,6 +35,7 @@ namespace Coursework
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.weeklychart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.weeklychart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +68,22 @@ namespace Coursework
             this.label1.TabIndex = 1;
             this.label1.Text = "Weekly Report";
             // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(59, 460);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(75, 23);
+            this.backbtn.TabIndex = 2;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // WeeklyReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 450);
+            this.ClientSize = new System.Drawing.Size(900, 498);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.weeklychart);
             this.Name = "WeeklyReport";
@@ -87,5 +99,6 @@ namespace Coursework
 
         private System.Windows.Forms.DataVisualization.Charting.Chart weeklychart;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button backbtn;
     }
 }
