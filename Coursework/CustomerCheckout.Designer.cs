@@ -29,7 +29,6 @@ namespace Coursework
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.name = new System.Windows.Forms.Label();
             this.name_tb = new System.Windows.Forms.TextBox();
             this.Age = new System.Windows.Forms.Label();
@@ -58,7 +57,6 @@ namespace Coursework
             this.group_rb = new System.Windows.Forms.RadioButton();
             this.individual_rb = new System.Windows.Forms.RadioButton();
             this.type = new System.Windows.Forms.Label();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -350,11 +348,6 @@ namespace Coursework
             this.type.TabIndex = 9;
             this.type.Text = "Entry Type";
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -422,7 +415,6 @@ namespace Coursework
         private System.Windows.Forms.RadioButton group_rb;
         private System.Windows.Forms.RadioButton individual_rb;
         private System.Windows.Forms.Label type;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.TextBox total_tb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox hour_tb;

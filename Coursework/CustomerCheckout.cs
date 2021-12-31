@@ -23,9 +23,8 @@ namespace Coursework
         int childonehrrate = 0;
         int adultonehrrate = 0;
 
-        IDictionary<int, string> childratecollection = new Dictionary<int, string>();
-        IDictionary<int, string> adultratecollection = new Dictionary<int, string>();
-        //IDictionary<int, string> groupcount = new Dictionary<int, string>();
+
+        IDictionary<int, string> groupnumbers = new Dictionary<int, string>();
 
 
         double hourscalcualation = 0;
@@ -61,6 +60,37 @@ namespace Coursework
                 }
             }
         }
+
+        public void loadgroupRates()
+        {
+           
+
+           
+            string groupratepath = "grouprates.csv";
+            string[] line = null;
+         
+
+            if (File.Exists(groupratepath))
+            {
+                line = File.ReadAllLines(groupratepath);
+               
+                if (line.Length == 2 )
+                {
+                
+
+                    string groupratesline = line[1];
+                    string[] grouprates = groupratesline.Split(',');
+
+                    groupnumbers.Add(5, grouprates[1]);
+                    groupnumbers.Add(10, grouprates[2]);
+                    groupnumbers.Add(15, grouprates[3]);
+                    groupnumbers.Add(20, grouprates[4]);
+                    groupnumbers.Add(25, grouprates[5]);
+                }
+            }
+        }
+
+
         private void checkout_btn_Click(object sender, EventArgs e)
         {
             string childcount = child_tb.Text;
@@ -112,14 +142,14 @@ namespace Coursework
 
                 if (group_rb.Checked)
                 {
-                    //int groupnumber = Int32.Parse(groupnumbercombo.Text);
-                    //double discount = ((Int32.Parse(groupcount[groupnumber]) * hours) * (groupnumber / 100d));
+                    int groupvalue = Int32.Parse(groupnumber_cb.Text);
+                    double discountvalue = ((Int32.Parse(groupnumbers[groupvalue]) * hourscalcualation) * (groupnumber / 100d));
 
-                    //totalprice = Math.Round((Int32.Parse(groupcount[groupnumber]) * hours) - discount);
-                    //totaltxt.Text = totalprice.ToString();
-                    //personCount = Int32.Parse(groupnumbercombo.Text);
-                    //personingroup = personCount;
-
+                    totalamount = Math.Round((Int32.Parse(groupnumbers[groupvalue]) * hourscalcualation) - discountvalue);
+                    total_tb.Text = totalamount.ToString();
+                    totalperson = Int32.Parse(groupnumber_cb.Text);
+                    groupnumber = totalperson;
+                    MessageBox.Show("Saved Successffully");
                 }
                 else
                 {
@@ -147,7 +177,8 @@ namespace Coursework
         private void CustomerCheckout_Load(object sender, EventArgs e)
         {
             receiveticketprice();
-
+            loadgroupRates();
+            groupnumber_cb.Text = "5";
             if (individual_rb.Checked)
             {
                 panel2.Show();
