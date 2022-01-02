@@ -171,6 +171,7 @@ namespace Coursework
                         MessageBox.Show("Please set ticket price before calculation");
                     }
                 }
+                loaddata();
             }
         }
 
@@ -184,7 +185,39 @@ namespace Coursework
                 panel2.Show();
                 groupnumber_cb.Hide();
             }
+            loaddata();
           
+        }
+        public void loaddata()
+        {
+            string path = "checkout.csv";
+            DataTable dt = new DataTable();
+            string[] lines = File.ReadAllLines(path);
+            if (lines.Length > 0)
+            {
+                string firstLine = lines[0];
+                string[] headerlabels = firstLine.Split(',');
+                foreach (string headerword in headerlabels)
+                {
+                    dt.Columns.Add(new DataColumn(headerword));
+                }
+                for (int i = 1; i < lines.Length; i++)
+                {
+                    string[] datawords = lines[i].Split(',');
+                    DataRow dr = dt.NewRow();
+                    int columnIndex = 0;
+                    foreach (string headerword in headerlabels)
+                    {
+                        dr[headerword] = datawords[columnIndex++];
+                    }
+                    dt.Rows.Add(dr);
+                }
+            }
+
+            if (dt.Rows.Count > 0)
+            {
+                dataGridView1.DataSource = dt;
+            }
         }
 
         private void individual_rb_CheckedChanged(object sender, EventArgs e)
